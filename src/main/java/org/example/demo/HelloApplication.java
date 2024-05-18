@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("HesabKetab");
         scene.getStylesheets().add
-                (Objects.requireNonNull(HelloApplication.class.getResource("main.css")).toExternalForm());
+                (Objects.requireNonNull(getClass().getResource("/src/css/main.css")).toExternalForm());
         stage.setScene(scene);
         stage.show();
     }
