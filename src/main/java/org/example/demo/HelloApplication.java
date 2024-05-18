@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class HelloApplication extends Application {
     @Override
@@ -13,6 +14,8 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("HesabKetab");
+        scene.getStylesheets().add
+                (Objects.requireNonNull(HelloApplication.class.getResource("main.css")).toExternalForm());
         stage.setScene(scene);
         stage.show();
     }
