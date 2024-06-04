@@ -1,0 +1,57 @@
+.root {
+    -fx-background-color: linear-gradient(to right, #5cbef5, #4158d0);
+}
+#LoginGrid {
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 30 30 30 30;
+    -fx-background-color: White;
+}
+.label {
+    /*-fx-font-size: 12px;*/
+    /*-fx-font-weight: bold;*/
+    /*-fx-text-fill: #333333;*/
+    /*-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );*/
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 24px;
+    -fx-text-fill: #101010;
+    -fx-spacing: 1.2;
+    -fx-text-alignment: center;
+    -fx-width: 100;
+}
+#LoginBtn {
+    /*-fx-text-fill: white;*/
+    /*-fx-font-family: "Tahoma";*/
+    /*-fx-font-weight: bold;*/
+    /*-fx-background-color: linear-gradient(to right, #21d4fd, #00b8ff, #1498fe, #6c71e8, #9b3dbd);;*/
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 15px;
+    -fx-text-fill: #fff;
+
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 30 30 30 30;
+    -fx-background-color: #57b846;
+}
+.text-field {
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 30 30 30 30;
+    -fx-font-size: 15px;
+    -fx-text-fill: #666666;
+
+    -fx-content-display: block;
+    -fx-background-color: #e6e6e6;
+    -fx-pref-height: 20px;
+}
+.text-field:focused {
+    display: block;
+    -fx-position-shape: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-fill: rgba(87,184,70, 0.8);
+}
